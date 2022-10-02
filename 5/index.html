@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise 5</title>
+</head>
+<body>
+<input placeholder="author" type="text" id="author"/>
+<input placeholder="quote" type="text" id="quote"/>
+<p id="statement"></p>
+<button onclick="generateQuote()">Click to generate a quote</button>
+<script>
+    function generateQuote() {
+        const author = document.getElementById("author").value;
+        const quote = document.getElementById("quote").value
+        document.getElementById("statement").innerHTML = `${author} once said: "${quote}"`;
+    }
+</script>
+</body>
+</html>
